@@ -7,6 +7,7 @@ public class HealthController : MonoBehaviour
     [SerializeField] private int healthPoints = 3;
     [SerializeField] private GameObject diePrefab = null;
     [SerializeField] private int dieObjectCount = 4;
+    [SerializeField] private int pointsWorth = 0;
 
     private void OnCollisionEnter2D(Collision2D _other)
     {
@@ -26,6 +27,8 @@ public class HealthController : MonoBehaviour
             for (int i = 0; i < dieObjectCount; i++)
                 Instantiate(diePrefab, transform.position, transform.rotation);
         }
+
+        GameManager.instance.AddPoints(pointsWorth);
 
         Destroy(this.gameObject);
     }

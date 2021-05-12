@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance = null;
+
     [SerializeField] private GameObject asteroidPrefab = null;
 
-    public static GameManager instance = null;
+    [SerializeField] private int points = 0;
+
     private void Awake()
     {
         if (instance != null)
@@ -23,5 +26,9 @@ public class GameManager : MonoBehaviour
     public void AsteroidDied()
     {
         Instantiate(asteroidPrefab);
+    }
+
+    public void AddPoints(int _amount) {
+        points += _amount;
     }
 }

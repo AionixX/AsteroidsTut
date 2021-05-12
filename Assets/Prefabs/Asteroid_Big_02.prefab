@@ -169,6 +169,7 @@ MonoBehaviour:
   healthPoints: 1
   diePrefab: {fileID: 3837270306733447545, guid: 28545e52e9d257a42a4458b11bfa55bf, type: 3}
   dieObjectCount: 4
+  pointsWorth: 10
 --- !u!114 &1411143189
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -101,6 +101,7 @@ MonoBehaviour:
   healthPoints: 1
   diePrefab: {fileID: 0}
   dieObjectCount: 4
+  pointsWorth: 20
 --- !u!50 &6263102345700158848
 Rigidbody2D:
   serializedVersion: 4
