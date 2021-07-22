@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3552398338550721984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.48, y: -0.53, z: 0}
+  m_LocalPosition: {x: -4.48, y: -0.53, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -152,7 +152,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &3552398338550722010
 MonoBehaviour:
@@ -170,6 +170,7 @@ MonoBehaviour:
   diePrefab: {fileID: 3837270306733447545, guid: 28545e52e9d257a42a4458b11bfa55bf, type: 3}
   dieObjectCount: 4
   pointsWorth: 10
+  respawnTime: 1.5
 --- !u!114 &1411143189
 MonoBehaviour:
   m_ObjectHideFlags: 0

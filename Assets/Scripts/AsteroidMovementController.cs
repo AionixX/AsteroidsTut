@@ -26,6 +26,7 @@ public class AsteroidMovementController : MonoBehaviour
     {
         // Move();
         CheckBoundaries();
+        rb.angularVelocity = 0;
     }
 
     // private void Move()

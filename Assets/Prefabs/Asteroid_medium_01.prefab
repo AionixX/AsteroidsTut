@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3837270306733447545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.138551, y: -2.5970166, z: 0}
+  m_LocalPosition: {x: -2.138551, y: -2.5970166, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!68 &284261507605780862
 EdgeCollider2D:
@@ -129,7 +129,7 @@ EdgeCollider2D:
   - {x: 0.4982134, y: 0.23514795}
   - {x: 0.5041971, y: -0.41243672}
   - {x: -0.3251505, y: -0.2335689}
-  - {x: -0.50370175, y: 0.028018475}
+  - {x: -0.51063424, y: 0.038802385}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 1
-  diePrefab: {fileID: 0}
+  diePrefab: {fileID: 6263102345700158854, guid: 5aa56230be6b940489a1fc76927d7555, type: 3}
   dieObjectCount: 4
   pointsWorth: 15
+  respawnTime: 1.5
